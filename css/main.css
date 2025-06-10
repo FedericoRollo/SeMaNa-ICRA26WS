@@ -73,7 +73,7 @@ html {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  width: 160px;
+  width: 220px;
   transition: transform 0.2s ease;
 }
 
@@ -82,20 +82,20 @@ html {
 }
 
 .organizer-card img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #0077c2;
+  border: 3px solid #0077c2;
   margin-bottom: 0.5rem;
 }
 
 .organizer-card .info h4 {
   margin: 0.3rem 0 0.1rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .organizer-card .info p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   color: #666;
 }
