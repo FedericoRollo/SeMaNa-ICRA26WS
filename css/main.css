@@ -9,7 +9,7 @@ header
     background-color: #0077c2;
     /* background-image: url(../images/husky.jpeg); */
     color: white;
-    padding: 4rem 2rem; /* to increase the dimension of the header */
+    padding: 2rem 1rem; /* to increase the dimension of the header */
     text-align: center;
 }
 
@@ -65,7 +65,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  justify-content: left;
   padding-top: 1rem;
 }
 
