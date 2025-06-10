@@ -1,7 +1,7 @@
 body 
 {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 header {
@@ -17,6 +17,9 @@ header {
   position: relative;
 }
 
+
+/* FIXME Use if you need to reduce background image visibility */
+
 /* header::before {
   content: "";
   position: absolute;
@@ -29,6 +32,8 @@ header > * {
   position: relative;
   z-index: 1;
 } */
+
+/* NAVIGATION TOOLBAR */
 
 nav ul {
   display: flex;
@@ -63,6 +68,15 @@ nav ul li a:focus {
   color: white;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
  nav ul {
@@ -77,7 +91,7 @@ nav ul li a:focus {
   }
 }
 
-
+/* GENERAL */
 section 
 {
     padding: 2rem 1rem;
@@ -94,19 +108,12 @@ footer
     font-size: 0.9rem;
 }
 
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #f5f5f5;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
 html {
   scroll-behavior: smooth;
   font-size: 11px; /* FIXME Base font size for scaling */
 }
+
+/* ORGANIZERS */
 
 .organizer-grid {
   display: flex;
@@ -183,3 +190,56 @@ html {
   opacity: 1;
 }
 
+/* SPEAKERS */
+
+#speakers {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.speaker-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+  justify-content: left;
+}
+
+.speaker-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0077c2;
+}
+
+.speaker-card:hover {
+  transform: scale(1.05);
+}
+
+.speaker-info h3 {
+  margin: 0 0 0.3rem;
+  font-size: 2rem;
+}
+
+.speaker-info p {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
+
+/* Responsive stacking on mobile */
+@media (max-width: 600px) {
+  .speaker-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speaker-info h3,
+  .speaker-info p {
+    text-align: center;
+  }
+}
