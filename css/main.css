@@ -4,14 +4,29 @@ body
     font-family: 'Segoe UI', sans-serif;
 }
 
-header 
-{
-    background-color: #0077c2;
-    /* background-image: url(../images/husky.jpeg); */
-    color: white;
-    padding: 2rem 1rem; /* to increase the dimension of the header */
-    text-align: center;
+header {
+  background-color: #0077c2;
+  /* background-image: url(../images/header.png); */
+  /* background-size: cover;           */
+  /* background-position: center;     */
+  /* background-repeat: no-repeat;     */
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
 }
+
+/* header::before {
+  content: "";
+  position: relative;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+header > * {
+  position: relative;
+  z-index: 1;
+} */
 
 nav ul {
   display: flex;
