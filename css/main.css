@@ -58,6 +58,7 @@ footer
 
 html {
   scroll-behavior: smooth;
+  font-size: 11px; /* FIXME Base font size for scaling */
 }
 
 .organizer-grid {
