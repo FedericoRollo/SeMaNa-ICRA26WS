@@ -1,0 +1,100 @@
+body 
+{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header 
+{
+    background-color: #0077c2;
+    /* background-image: url(../images/husky.jpeg); */
+    color: white;
+    padding: 4rem 2rem; /* to increase the dimension of the header */
+    text-align: center;
+}
+
+nav ul 
+{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+    background: #f5f5f5;
+    margin: 0;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #0077c2;
+    font-weight: bold;
+}
+
+section 
+{
+    padding: 2rem 1rem;
+    max-width: 960px;
+    margin: auto;
+    scroll-margin-top: 40px;
+}
+
+footer 
+{
+    background: #efefef;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.organizer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.organizer-card {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 160px;
+  transition: transform 0.2s ease;
+}
+
+.organizer-card:hover {
+  transform: scale(1.05);
+}
+
+.organizer-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0077c2;
+  margin-bottom: 0.5rem;
+}
+
+.organizer-card .info h4 {
+  margin: 0.3rem 0 0.1rem;
+  font-size: 1rem;
+}
+
+.organizer-card .info p {
+  font-size: 0.9rem;
+  color: #666;
+}
