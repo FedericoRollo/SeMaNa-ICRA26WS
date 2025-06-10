@@ -146,3 +146,40 @@ html {
   font-size: 1.3rem;
   color: #666;
 }
+
+.organizer-img {
+  position: relative;
+  display: inline-block;
+}
+
+.organizer-img img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0077c2;
+}
+
+.bio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.organizer-img:hover .bio-overlay {
+  opacity: 1;
+}
+
