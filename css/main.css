@@ -216,6 +216,7 @@ html {
   border: 3px solid #0077c2;
 }
 
+
 .speaker-card:hover {
   transform: scale(1.05);
 }
@@ -223,11 +224,13 @@ html {
 .speaker-info h3 {
   margin: 0 0 0.3rem;
   font-size: 2rem;
+  color: #666;
 }
 
 .speaker-info p {
   margin: 0.3rem 0;
   line-height: 1.5;
+  color: #666;
 }
 
 /* Responsive stacking on mobile */
