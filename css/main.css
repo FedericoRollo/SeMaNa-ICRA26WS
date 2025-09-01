@@ -260,7 +260,7 @@ table {
 }
 th, td {
     padding: 1rem;
-    border: 1px solid #d1d5db;
+    border: 2px solid #d1d5db;
 }
 th {
     background-color: #1f2937;
@@ -272,9 +272,9 @@ td {
     background-color: #ffffff;
     vertical-align: top;
 }
-tr:nth-child(even) td {
+/* tr:nth-child(even) td {
     background-color: #f9fafb;
-}
+} */
 .rotated-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
