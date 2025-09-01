@@ -6,10 +6,10 @@ body
 
 header {
   background-color: #0077c2;
-  /* background-image: url(../images/header.png); */
-  /* background-size: cover;           */
-  /* background-position: center;     */
-  /* background-repeat: no-repeat;     */
+  /* background-image: url(../images/title_background.png);
+  background-size: cover;          
+  background-position: center;    
+  background-repeat: no-repeat;     */
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -245,4 +245,38 @@ html {
   .speaker-info p {
     text-align: center;
   }
+}
+
+/* TABLE */
+.table-container {
+    max-width: 90%;
+    margin: 2rem auto;
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.25rem;
+}
+th, td {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+}
+th {
+    background-color: #1f2937;
+    color: #f9fafb;
+    text-align: left;
+    font-weight: 600;
+}
+td {
+    background-color: #ffffff;
+    vertical-align: top;
+}
+tr:nth-child(even) td {
+    background-color: #f9fafb;
+}
+.rotated-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
 }
